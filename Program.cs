@@ -4,6 +4,16 @@ using Microsoft.Extensions.Configuration;
 
 namespace HelloWeb
 {
+    
+    abstract class Base
+{
+    public Base() // Noncompliant, should be private or protected
+    {
+      string a = "";
+    }
+}
+    
+    
     public class Program
     {
         public static void Main(string[] args)
